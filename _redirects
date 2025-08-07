@@ -1,0 +1,23 @@
+# Netlify redirects for BubbleRoot Studios
+# Force HTTPS
+http://bubblerootstudios.co.za/* https://bubblerootstudios.co.za/:splat 301!
+
+# Custom redirects
+/insights          /blog.html          200
+/articles          /blog.html          200
+/quantum-insights  /blog.html          200
+/ndzalama          /index.html#interface    200
+/mahlatse          /index.html#mahlatse-trading  200
+/ai                /index.html#interface    200
+/crypto            /index.html#mahlatse-trading  200
+/trading           /index.html#mahlatse-trading  200
+
+# SPA fallback for client-side routing
+/*    /index.html   200
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
