@@ -1,0 +1,48 @@
+# GitHub Pages Configuration for BubbleRoot Studios
+title: "BubbleRoot Studios"
+description: "Creative Intelligence Meets Practical Design"
+url: "https://bubblerootstudios.co.za"
+baseurl: ""
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugin settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - DEPLOYMENT_CHECKLIST.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - .gitignore
+
+# Include files
+include:
+  - _redirects
+  - .htaccess
+
+# SEO settings
+author: BubbleRoot Studios
+twitter:
+  username: bubblerootstudios
+  card: summary_large_image
+
+social:
+  name: BubbleRoot Studios
+  links:
+    - https://bubblerootstudios.co.za
+
+# Google Analytics
+google_analytics: G-QY5VHYFK3W
